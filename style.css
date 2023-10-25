@@ -4,11 +4,16 @@
         verde: 3dbf2f
         branco: f4f4f4 */
 
-/* ESTILO GERAL */
+/* GENERAL STYLE */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "mao";
+    src: url("fonts/DancingScript-VariableFont_wght.ttf") format("truetype");
 }
 
 body {
@@ -16,12 +21,28 @@ body {
     height: 100vh;
 }
 
-div.interface {
+.interface {
     max-width: 1280px;
-    margin: 0 auto;
+    /* centraliza */
+    margin: auto;
+}
+.flex {
+    display: flex;
 }
 
-/* ESTILO DO CABEÇALHO */
+.btn_contato button {
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #3dbf2f;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+/* HEADER STYLE */
 header {
     padding: 40px;
 }
@@ -31,8 +52,11 @@ img {
 }
 
 header .interface {
+    /* deixa os elementos um do lado do outro */
     display: flex;
+    /* alinha os elementos entre eles (centralização vertical) */
     align-items: center;
+    /* alinha os elementos com espaçoes iguais entre eles (centralização horizontal) */
     justify-content: space-between;
 }
 
@@ -54,17 +78,57 @@ header nav ul li {
     padding: 0 50px;
 }
 
-header .btn_contato button {
-    padding: 10px 30px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #3dbf2f;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-
+.btn_contato button:hover {
+    box-shadow: 0px 0px 8px #3dbf2f82;
+    transform: scale(1.05);
 }
 
-header .btn_contato button:hover {
-    box-shadow: 0px 0px 8px #3dbf2f82;
+/* TOP STYLE */
+section.top_site {
+    padding: 40px 4%;
+}
+
+img.eu {
+    height: 300px;
+    /* border-radius: 80px 100px 100px 100px;
+    box-shadow: 0 0 8px 8px #3dbf2f; */
+}
+
+section.top_site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.top_site h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 30px;
+}
+
+.top_site h1 span {
+    color: #3dbf2f;
+    font-size: 70px;
+}
+
+.top_site .txt_top_site p {
+    color: #fff;
+    padding: 40px 0;
+    font-family: "mao";
+}
+
+.top_site .img_top_site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
 }
