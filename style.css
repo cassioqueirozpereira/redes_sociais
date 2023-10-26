@@ -1,19 +1,30 @@
 @charset "UTF-8";
 
-/*      cores do projeto
-        verde: 3dbf2f
-        branco: f4f4f4 */
+/* chamando fonte baixada no computador */
+@font-face {
+    /* nomeando a fonte (nome é da sua escolha) */
+    font-family: "mao";
+    /* mostrando aonde está a fonte no computador e dizendo qual o seu formato (fiz alguns testes e aparentemente não é necessário dizer qual é o formato */
+    src: url("fonts/DancingScript-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "android";
+    /* aqui vou deixar em comentário o formato */
+    src: url("fonts/idroid.otf") /* format("opentype") */;
+}
+
+/*      
+    cores do projeto
+    verde: 3dbf2f
+    branco: f4f4f4
+*/
 
 /* GENERAL STYLE */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-@font-face {
-    font-family: "mao";
-    src: url("fonts/DancingScript-VariableFont_wght.ttf") format("truetype");
 }
 
 body {
@@ -26,7 +37,9 @@ body {
     /* centraliza */
     margin: auto;
 }
+
 .flex {
+    /* deixa os elementos um do lado do outro */
     display: flex;
 }
 
@@ -37,9 +50,16 @@ body {
     background-color: #3dbf2f;
     border: 0;
     border-radius: 30px;
+    /* quando vc passa o mouse, por cima dessa tag, muda o cursor para a mãozinha */
     cursor: pointer;
-    transition: .2s;
+    /* tempo para fazer a transição */
+    transition: .3s;
+}
 
+.btn_contato button:hover {
+    box-shadow: 0px 0px 8px #3dbf2f82;
+    /* transforma o tamanho em uma escala maior ou menor da original, conforme o valor que vc coloca dentro dos parenteses */
+    transform: scale(1.08);
 }
 
 /* HEADER STYLE */
@@ -64,23 +84,21 @@ header a {
     color: #7d7d7d;
     text-decoration: none;
     display: inline-block;
-    transition: .2s;
+    transition: .3s;
 }
 
 header a:hover {
     color: #fff;
-    transform: scale(1.05);
+    /* transforma o tamanho em uma escala maior ou menor da original, conforme o valor que vc coloca dentro dos parenteses */
+    transform: scale(1.08);
 }
 
 header nav ul li {
+    /* comando para tirar a bolinha (disc) que vem como padão na lista */
     list-style-type: none;
+    /* deixa os elementos um do lado do outro (nesse caso não funcionou o display: flex;) */
     display: inline-block;
     padding: 0 50px;
-}
-
-.btn_contato button:hover {
-    box-shadow: 0px 0px 8px #3dbf2f82;
-    transform: scale(1.05);
 }
 
 /* TOP STYLE */
@@ -96,14 +114,18 @@ img.eu {
 
 section.top_site .flex {
     align-items: center;
-    justify-content: center;
-    gap: 90px;
+    /* não estava fazendo nada então removi */
+    /* justify-content: center; */
+
+    /* espaço entre os elementos */
+    gap: 300px;
 }
 
 .top_site h1 {
     color: #fff;
     font-size: 42px;
     line-height: 30px;
+    font-family: "android";
 }
 
 .top_site h1 span {
@@ -113,22 +135,75 @@ section.top_site .flex {
 
 .top_site .txt_top_site p {
     color: #fff;
-    padding: 40px 0;
+    padding: 50px 0;
     font-family: "mao";
 }
 
+/* chama a função flutuar */
 .top_site .img_top_site img {
+    /* a animação só funciona se o position for diferente de static, tem que ser relative, absolute, etc. (nesse caso foi usado o relative, para a imagem ficar dentro dos parametros estabelecidos no site */
     position: relative;
+    /* 2s (é o tempo de duração da animação)
+        ease-in-out (cadencia o movimento)
+        infinite (é quantas vezes vai ser feito o movimento)
+        alternate (é para o movimento alternar, debaixo para cima e de cima para baixo) */
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-
+/* função flutuar */
 @keyframes flutuar {
+    /* quando começa a animação */
     0% {
+        /* posição de onde vai começar a animação */
         top: 0;
     }
 
+    /* quando termina a animação */
     100% {
+        /* posição aonde irá terminar a animação */
         top: 30px;
     }
+}
+
+/* STYLE OF SPECIALTIES */
+section.specialties {
+    padding: 100px 4%;
+}
+
+section.specialties .flex {
+    gap: 60px;
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #3dbf2f;
+}
+
+.specialties .specialties_box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 40px;
+    transition: .3s;
+}
+
+.specialties .specialties_box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #fff;
+    cursor: pointer;
+}
+
+.specialties_box i {
+    font-size: 70px;
+    color: #3dbf2f;;
+}
+
+.specialties h3 {
+    font-size: 30px;
+    padding: 20px 0;
 }
