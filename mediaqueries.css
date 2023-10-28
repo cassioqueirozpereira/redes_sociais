@@ -1,0 +1,81 @@
+
+@media screen and (max-width: 1076px) {
+    /* GENERAL CLASSES */
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.title {
+        font-size: 35px;
+    }
+
+    /* HEADER */
+    header {
+        padding: 50px 15%;
+    }
+
+    .menu_desktop, .btn_contato {
+        display: none;
+    }
+
+    /* SITE TOP */
+    section.top_site {
+        padding: 20px 15%;
+    }
+
+    section.top_site .flex {
+        gap: 40px;
+    }
+
+    .top_site h1 {
+        font-size: 30px;
+    }
+
+    .top_site h1 span {
+        font-size: 30px;
+    }
+
+    .top_site .txt_top_site p {
+        font-size: 15px;
+    }
+
+    /* SPECIALTIES */
+    section.specialties {
+        padding: 40px 20%;
+    }
+
+    /* ABOUT */
+    section.about {
+        padding: 80px 15%;
+    }
+
+    .about .txt_about h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .btn_social {
+        text-align: center;
+    }
+
+    /* PORTFOLIO */
+    section.portfolio {
+        padding: 40px 8%;
+    }
+
+    .img_port {
+        width: 100%;
+        max-width: 360px;
+        margin: auto;
+    }
+    .img_port2 {
+        width: 100%;
+        max-width: 360px;
+        margin: auto;
+    }
+    .img_port3 {
+        width: 100%;
+        max-width: 360px;
+        margin: auto;
+    }
+}
