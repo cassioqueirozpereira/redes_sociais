@@ -371,6 +371,7 @@ footer {
 
 .line_footer {
     display: flex;
+    /* separa as boxs/elementos com espaço horizontal igual entre as mesmas */
     justify-content: space-between;
     padding: 30px 0;
 }
@@ -392,22 +393,4 @@ footer {
 
 .border {
     border-bottom: 2px solid #3dbf2f;
-}
-
-
-@media screen and (max-width: 1076px) {
-    /* GENERAL CLASSES */
-    .flex {
-        flex-direction: column;
-    }
-
-    /* HEADER */
-    .menu_desktop, .btn_contato {
-        display: none;
-    }
-
-    /* SITE TOP */
-    .top_site h1 {
-        font-size: 50px;
-    }
 }
