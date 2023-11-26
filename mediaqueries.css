@@ -85,4 +85,12 @@
         text-align: center;
         gap: 40px;
     }
+
+    .line_footer p a {
+        font-size: 20px;
+    }
+
+    .line_footer p i {
+        font-size: 20px;
+    }
 }
