@@ -11,7 +11,7 @@
 
     /* HEADER */
     header {
-        padding: 50px 15%;
+        padding: 50px 10%;
     }
 
     .menu_desktop, .btn_contato {
@@ -20,7 +20,7 @@
 
     /* SITE TOP */
     section.top_site {
-        padding: 20px 15%;
+        padding: 20px 10%;
     }
 
     section.top_site .flex {
@@ -41,12 +41,12 @@
 
     /* SPECIALTIES */
     section.specialties {
-        padding: 40px 20%;
+        padding: 40px 10%;
     }
 
     /* ABOUT */
     section.about {
-        padding: 80px 15%;
+        padding: 80px 10%;
     }
 
     .about .txt_about h2 {
@@ -60,7 +60,7 @@
 
     /* PORTFOLIO */
     section.portfolio {
-        padding: 40px 8%;
+        padding: 40px 10%;
     }
 
     .img_port {
