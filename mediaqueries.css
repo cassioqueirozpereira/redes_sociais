@@ -41,12 +41,12 @@
 
     /* SPECIALTIES */
     section.specialties {
-        padding: 40px 10%;
+        padding: 40px 8%;
     }
 
     /* ABOUT */
     section.about {
-        padding: 80px 10%;
+        padding: 40px 10%;
     }
 
     .about .txt_about h2 {
