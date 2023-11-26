@@ -10,6 +10,9 @@
     <!-- BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- FIM BOOTSTRAP ICONS -->
+    <!-- LINK JAVA SCRIPT -->
+    <script src="menu.js" defer></script>
+    <!-- FIM LINK JAVA SCRIPT -->
 </head>
 <body>
     <header>
@@ -28,12 +31,37 @@
                     <li><a href="#">PROJETOS</a></li>
                 </ul>
             </nav>
-
+            
             <div class="btn_contato">
                 <a href="#">
                     <button>CONTATO</button>
                 </a>
             </div><!--btn_contato-->
+            
+            <div id="btn_menu" class="btn_abrir_menu">
+                <i class="bi bi-list"></i>
+            </div><!--btn_abrir_menu-->
+
+            <div class="menu_mobile" id="menu_mobile">
+                <div class="btn_fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div><!--btn_fechar-->
+
+                <nav>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">HABILIDADES</a></li>
+                        <li><a href="#">SOBRE</a></li>
+                        <li><a href="#">PROJETOS</a></li>
+                        <li><a href="#">CONTATO</a></li>
+                    </ul>
+                </nav>
+
+            </div><!-- menu_mobile -->
+
+            <div id="overlay_menu" class="overlay_menu">
+
+            </div><!--overlay_menu-->
         </div><!--interface-->
     </header>
 

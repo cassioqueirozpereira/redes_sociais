@@ -78,4 +78,11 @@
         max-width: 360px;
         margin: auto;
     }
+
+    /* FOOTER */
+    .line_footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
 }
