@@ -361,7 +361,7 @@ section.portfolio .flex{
 .img_port {
     width: 360px;
     height: 460px;
-    background-image: url(images/github.jpeg);
+    background-image: url(../images/github.jpeg);
     /* tenta enquadrar a imagem da melhor forma */
     background-size: cover;
     /* a primeira posição que está 100% é o valor do width e o segundo valor que está 0% é o height */
@@ -377,7 +377,7 @@ section.portfolio .flex{
     width: 360px;
     height: 460px;
     background-color: #fff;
-    background-image: url(images/facebook.jpg);
+    background-image: url(../images/facebook.jpg);
     background-size: cover;
     background-position: 100% 0%;
     transition: 55s ease-out;
@@ -389,7 +389,7 @@ section.portfolio .flex{
     width: 360px;
     height: 460px;
     background-color: #fff;
-    background-image: url(images/instagram.jpeg);
+    background-image: url(../images/instagram.jpeg);
     background-size: cover;
     background-position: 100% 0%;
     transition: 15s ease-out;
