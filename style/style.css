@@ -5,13 +5,13 @@
     /* nomeando a fonte (nome é da sua escolha) */
     font-family: "mao";
     /* mostrando aonde está a fonte no computador e dizendo qual o seu formato (fiz alguns testes e aparentemente não é necessário dizer qual é o formato */
-    src: url("fonts/DancingScript-VariableFont_wght.ttf") format("truetype");
+    src: url("../fonts/DancingScript-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "android";
     /* aqui vou deixar em comentário o formato */
-    src: url("fonts/idroid.otf") /* format("opentype") */;
+    src: url("../fonts/idroid.otf") /* format("opentype") */;
 }
 
 /*      
