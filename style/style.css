@@ -109,7 +109,7 @@ header .interface {
     /* alinha os elementos entre eles (centralização vertical) */
     align-items: center;
     /* alinha os elementos com espaçoes iguais entre eles (centralização horizontal) */
-    justify-content: space-between;
+    align-content: space-between;
 }
 
 header a {
@@ -225,6 +225,7 @@ section.top_site .flex {
 .top_site h1 {
     color: #fff;
     font-size: 42px;
+    /* espaço entre as linhas */
     line-height: 30px;
     font-family: "android", Arial, Helvetica, sans-serif;
 }
