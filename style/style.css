@@ -109,7 +109,7 @@ header .interface {
     /* alinha os elementos entre eles (centralização vertical) */
     align-items: center;
     /* alinha os elementos com espaçoes iguais entre eles (centralização horizontal) */
-    align-content: space-between;
+    justify-content: space-between;
 }
 
 header a {
@@ -133,72 +133,7 @@ header nav.menu_desktop ul li {
     padding: 0 50px;
 }
 
-/* STYLE MOBILE MENU */
-.btn_abrir_menu i {
-    color: #3dbf2f;
-    font-size: 40px;
-}
-
 .menu_mobile {
-    background-color: #000;
-    height: 100vh;
-    /* comando para deixar fixo o menu, porém ele não ocupa mais toda a vh */
-    position: fixed;
-    /* para o menu ocupar toda a vh */
-    top: 0;
-    /* para o menu ocupar toda a vw, porém a imagem ainda fica na frente do menu */
-    right: 0;
-    /* deixa o menu frente/por cima de todos os elementos do site */
-    z-index: 9999999;
-    /* para deixar o menu com um respiro do lado esquerdo */
-    width: 0%;
-    overflow: hidden;
-    transition: .5s;
-}
-
-.menu_mobile.abrir_menu {
-    width: 70%;
-}
-
-/* o "~" significa que sempre que aacontecer o evento antes do "~", o evento após o "~" acontecerá tbm. Exemplo: evento 1 ~ evento 2 */
-.menu_mobile.abrir_menu ~ .overlay_menu {
-    display: block;
-}
-
-.menu_mobile .btn_fechar {
-    padding: 20px 6%;
-}
-
-.menu_mobile .btn_fechar i {
-    color: #3dbf2f;
-    font-size: 30px;
-}
-
-.menu_mobile nav ul {
-    text-align: right;
-    list-style-type: none;
-
-}
-
-.menu_mobile nav ul li a {
-    font-size: 20px;
-    padding: 20px 8%;
-    display: block;
-}
-
-.menu_mobile nav ul a:hover {
-    background-color: #3dbf2f;
-    color: #000;
-}
-
-.overlay_menu {
-    background-color: #000000ce;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 88888;
     display: none;
 }
 
@@ -327,6 +262,7 @@ section.about {
 }
 
 .about .txt_about h2 {
+    color: #fff;
     font-size: 45px;
     /* distancia de altura entre as linhas */
     line-height: 50px;
