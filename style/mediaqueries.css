@@ -48,6 +48,9 @@
     }
 
     /* o "~" significa que sempre que aacontecer o evento antes do "~", o evento após o "~" acontecerá tbm. Exemplo: evento 1 ~ evento 2 */
+    .menu_mobile.abrir_menu ~ .overlay_menu {
+        display: block;
+    }
 
     .menu_mobile .btn_fechar {
         padding: 20px 5%;
@@ -107,14 +110,14 @@
         font-size: 15px;
     }
 
-    /* SPECIALTIES */
+    /* SPECIALTIES */ 
     section.specialties {
         padding: 40px 10%;
     }
 
     /* ABOUT */
     section.about {
-        padding: 40px 10%;
+        padding: 40px 6%;
     }
 
     .about .txt_about h2 {
