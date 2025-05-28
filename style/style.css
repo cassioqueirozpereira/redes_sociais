@@ -303,7 +303,7 @@ section.portfolio .flex{
     /* a primeira posição que está 100% é o valor do width e o segundo valor que está 0% é o height */
     background-position: 100% 0%;
     /* os 30s é o tempo da animação, o ease-out é a cadencia, ease-in-out (tinha muita aceleração no in/meio) */
-    transition: 30s ease-out;
+    transition: 1s ease-out;
     cursor: pointer;
     border-radius: 30px;
     position: relative;
@@ -316,7 +316,7 @@ section.portfolio .flex{
     background-image: url(../images/facebook.jpg);
     background-size: cover;
     background-position: 100% 0%;
-    transition: 55s ease-out;
+    transition: 1s ease-out;
     border-radius: 30px;
     position: relative;
 }
@@ -328,21 +328,24 @@ section.portfolio .flex{
     background-image: url(../images/instagram.jpeg);
     background-size: cover;
     background-position: 100% 0%;
-    transition: 15s ease-out;
+    transition: 1s ease-out;
     border-radius: 30px;
     position: relative;
 }
 
 .img_port:hover {
     background-position: 100% 100%;
+    transition: 10s ease-out;
 }
 
 .img_port2:hover {
     background-position: 100% 100%;
+    transition: 15s ease-out;
 }
 
 .img_port3:hover {
     background-position: 100% 100%;
+    transition: 5s ease-out;
 }
 
 .overlay {
@@ -399,4 +402,11 @@ footer {
 
 .border {
     border-bottom: 2px solid #3dbf2f;
+}
+
+/* Corrige o problema com o menu sanduiche não ficar fixo */
+html {
+    view-transition-name: unset !important; /* Desativa a transição */
+    /* Ou, se preferir uma forma mais antiga, mas menos semântica: */
+    /* view-transition-name: initial !important; */
 }
