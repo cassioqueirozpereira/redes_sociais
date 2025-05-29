@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* chamando fonte baixada no computador */
+@font-face {
+    /* nomeando a fonte (nome é da sua escolha) */
+    font-family: "mao";
+    /* mostrando aonde está a fonte no computador e dizendo qual o seu formato (fiz alguns testes e aparentemente não é necessário dizer qual é o formato */
+    src: url("../fonts/DancingScript-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "android";
+    /* aqui vou deixar em comentário o formato */
+    src: url("../fonts/idroid.otf") /* format("opentype") */;
+}
+
+/*      
+    cores do projeto
+    verde: 3dbf2f
+    branco: f4f4f4
+*/
+
+/* GENERAL STYLE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.main {
+    /* max-width: 1280px; */
+    margin: 0 auto;
+    padding: 0 8%;
+}
+
+h1 {
+    color: #fff;
+    margin: 40px;
+    font-size: 50px;
+}
+
+h2 {
+    color: #fff;
+    margin: 40px;
+    font-size: 20px;
+}
+
+h3 {
+    color: #fff;
+    margin: 50px;
+}
+
+span {
+    color: #3dbf2f;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}

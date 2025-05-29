@@ -69,6 +69,11 @@ form p {
     outline: 0;
 }
 
+#text_box {
+    width: 100%;
+    height: 100%;
+}
+
 form .input_single .input:focus ~ label,
 form .input_single .input:valid ~ label {
     transform: translateY(-25px);
