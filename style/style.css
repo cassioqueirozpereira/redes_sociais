@@ -303,7 +303,7 @@ section.portfolio .flex{
     /* a primeira posição que está 100% é o valor do width e o segundo valor que está 0% é o height */
     background-position: 100% 0%;
     /* os 30s é o tempo da animação, o ease-out é a cadencia, ease-in-out (tinha muita aceleração no in/meio) */
-    transition: 1s ease-out;
+    transition: 2s ease-out;
     cursor: pointer;
     border-radius: 30px;
     position: relative;
@@ -311,7 +311,7 @@ section.portfolio .flex{
 
 .img_port:hover {
     background-position: 100% 100%;
-    transition: 30s ease-out;
+    transition: 8s ease-out;
 }
 
 .img_port2 {
@@ -328,7 +328,7 @@ section.portfolio .flex{
 
 .img_port2:hover {
     background-position: 100% 100%;
-    transition: 15s ease-out;
+    transition: 5s ease-out;
 }
 
 .img_port3 {
@@ -345,7 +345,7 @@ section.portfolio .flex{
 
 .img_port3:hover {
     background-position: 100% 100%;
-    transition: 5s ease-out;
+    transition: 8s ease-out;
 }
 
 .overlay {
@@ -402,6 +402,11 @@ footer {
 
 .border {
     border-bottom: 2px solid #3dbf2f;
+}
+
+.fe img {
+    height: 80px;
+    padding: 0 50px 0 0;
 }
 
 /* Corrige o problema com o menu sanduiche não ficar fixo */
