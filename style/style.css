@@ -297,7 +297,7 @@ section.portfolio .flex{
 .img_port {
     width: 360px;
     height: 460px;
-    background-image: url(../images/github.jpeg);
+    background-image: url(../images/projeto_cordel.png);
     /* tenta enquadrar a imagem da melhor forma */
     background-size: cover;
     /* a primeira posição que está 100% é o valor do width e o segundo valor que está 0% é o height */
@@ -309,38 +309,38 @@ section.portfolio .flex{
     position: relative;
 }
 
+.img_port:hover {
+    background-position: 100% 100%;
+    transition: 30s ease-out;
+}
+
 .img_port2 {
     width: 360px;
     height: 460px;
     background-color: #fff;
-    background-image: url(../images/facebook.jpg);
+    background-image: url(../images/automacao.png);
     background-size: cover;
     background-position: 100% 0%;
     transition: 1s ease-out;
     border-radius: 30px;
     position: relative;
+}
+
+.img_port2:hover {
+    background-position: 100% 100%;
+    transition: 15s ease-out;
 }
 
 .img_port3 {
     width: 360px;
     height: 460px;
     background-color: #fff;
-    background-image: url(../images/instagram.jpeg);
+    background-image: url(../images/Chat_online.png);
     background-size: cover;
     background-position: 100% 0%;
     transition: 1s ease-out;
     border-radius: 30px;
     position: relative;
-}
-
-.img_port:hover {
-    background-position: 100% 100%;
-    transition: 10s ease-out;
-}
-
-.img_port2:hover {
-    background-position: 100% 100%;
-    transition: 15s ease-out;
 }
 
 .img_port3:hover {
