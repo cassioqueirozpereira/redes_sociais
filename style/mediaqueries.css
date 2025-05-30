@@ -106,6 +106,8 @@
 
     .top_site h1 {
         font-size: 30px;
+        /* espaço entre as linhas */
+        line-height: 30px;
     }
 
     .top_site h1 span {
