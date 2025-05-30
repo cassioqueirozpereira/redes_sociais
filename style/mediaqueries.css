@@ -171,6 +171,12 @@
     .line_footer p i {
         font-size: 20px;
     }
+
+    .fe img {
+        height: 80px;
+        padding: 10px;
+    }
+
     /* Corrige o problema com o menu sanduiche não ficar fixo */
     html {
         view-transition-name: unset !important; /* Desativa a transição */
