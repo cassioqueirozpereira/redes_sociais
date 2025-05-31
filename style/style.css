@@ -29,7 +29,7 @@
 
 body {
     background-color: #000;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .interface {
@@ -100,7 +100,14 @@ button:hover {
 
 /* HEADER STYLE */
 header {
-    padding: 100px 4%;
+    padding: 15px 4%;
+    
+    /* Adicione estas linhas para tornar o header sticky */
+    position: sticky; /* Define o posicionamento como sticky */
+    top: 0;           /* Fixa o header no topo da tela quando a rolagem atinge o topo */
+    width: 100%;      /* Garante que o header ocupe toda a largura */
+    background-color: #000; /* Defina a cor de fundo do seu header, para que o conteúdo não apareça por trás */
+    z-index: 1000;    /* Garante que o header fique sobre outros elementos ao rolar */
 }
 
 header .interface {
