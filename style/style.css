@@ -53,6 +53,10 @@ h2.title span {
     color: #3dbf2f;
 }
 
+span {
+        color: #3dbf2f;
+}
+
 .btn_contato button {
     padding: 10px 30px;
     font-size: 18px;
@@ -277,7 +281,6 @@ section.about {
 }
 
  .about .txt_about h2 span {
-    font-family: "mao", 'Courier New', Courier, monospace;
     color: #3dbf2f;
     display: block;
     font-size: larger;
