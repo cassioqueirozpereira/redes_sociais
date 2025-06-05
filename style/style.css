@@ -123,6 +123,10 @@ header .interface {
     justify-content: space-between;
 }
 
+#specialties, #about, #portfolio {
+    scroll-margin-top: 15px;
+}
+
 header a {
     color: #7d7d7d;
     text-decoration: none;
