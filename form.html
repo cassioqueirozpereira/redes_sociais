@@ -13,25 +13,25 @@
             <form id="contactForm" action="https://formspree.io/f/xeogybay" method="post">
                 <h1>Entre em contato</h1>
 
-                <p>Preencha o formulário abaixo e entraremos em contato com você</p>
+                <p>Preencha o formulário abaixo e entrarei em contato com você!</p>
 
                 <div class="input_single">
-                    <input type="text" name="nome_box" id="nome_box" class="input" required>
-                    <label for="nome_box">Seu nome completo: </label>
+                    <input type="text" name="nome" id="nome" class="input" required>
+                    <label for="nome">Seu nome completo: </label>
                 </div>
 
                 <div class="input_single">
-                    <input type="text" name="email_box" id="email_box" class="input" required>
-                    <label for="email_box">Seu e-mail: </label>
+                    <input type="email" name="email" id="email" class="input" autocomplete="email" required>
+                    <label for="email">Seu e-mail: </label>
                 </div>
 
                 <div class="input_single">
-                    <input type="number" name="telefone_box" id="telefone_box" class="input" required>
-                    <label for="telefone_box">Seu telefone: </label>
+                    <input type="tel" name="telefone" id="telefone" class="input" autocomplete="tel" pattern="^\d{2} \d{4,5}\d{4}$" required>
+                    <label for="telefone">Seu telefone: </label>
                 </div>
 
                 <div class="input_single">
-                    <textarea name="text_box" id="text_box" placeholder="Sua mensagem" required></textarea>
+                    <textarea name="text" id="text" placeholder="Sua mensagem" required></textarea>
                 </div>
 
                 <div class="btn">
@@ -41,5 +41,6 @@
         </div>
     </section>
     <script src="js/form_redirect.js"></script>
+    <script src="js/dynamic_placeholders.js"></script>
 </body>
 </html>
