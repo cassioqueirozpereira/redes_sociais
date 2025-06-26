@@ -124,7 +124,7 @@ header .interface {
 }
 
 #specialties, #about, #portfolio {
-    scroll-margin-top: 15px;
+    scroll-margin-top: 20px;
 }
 
 header a {
@@ -336,6 +336,7 @@ section.portfolio .flex{
     background-size: cover;
     background-position: 100% 0%;
     transition: 1s ease-out;
+    cursor: pointer;
     border-radius: 30px;
     position: relative;
 }
@@ -353,6 +354,7 @@ section.portfolio .flex{
     background-size: cover;
     background-position: 100% 0%;
     transition: 1s ease-out;
+    cursor: pointer;
     border-radius: 30px;
     position: relative;
 }
