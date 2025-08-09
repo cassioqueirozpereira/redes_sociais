@@ -91,7 +91,7 @@ form .input_single .input:valid ~ label {
 }
 
 form input[type=submit] {
-    padding: 5px 40px;
+    padding: 8px 40px;
     border: 0;
     border-radius: 10px;
     background-color: purple;
