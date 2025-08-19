@@ -3,27 +3,48 @@ document.addEventListener('DOMContentLoaded', function() {
     const inputsWithDynamicPlaceholders = [
         { id: 'telefone', placeholder: 'xx xxxxx-xxxx' },
         { id: 'email', placeholder: 'seu email@example.com' },
-        { id: 'nome', placeholder: 'seu nome'} // Adicionamos o e-mail aqui
-        // Adicione outros inputs que você queira com placeholder dinâmico
-        // { id: 'outroCampo', placeholder: 'Placeholder para outro campo' }
+        { id: 'nome', placeholder: 'seu nome'}
     ];
 
     inputsWithDynamicPlaceholders.forEach(item => {
         const inputElement = document.getElementById(item.id);
 
-        if (inputElement) { // Verifica se o elemento existe na página
-            // Garante que o placeholder não esteja presente no carregamento inicial da página
+        if (inputElement) {
+            // Remove o placeholder inicial para que ele não apareça
             inputElement.removeAttribute('placeholder');
 
+            // Adiciona a classe 'has-content' se o campo já tiver valor ao carregar a página
+            if (inputElement.value.trim() !== '') {
+                inputElement.classList.add('has-content');
+            }
+
+            // Quando o campo recebe foco
             inputElement.addEventListener('focus', function() {
-                // Adiciona o placeholder quando o input recebe foco
-                inputElement.setAttribute('placeholder', item.placeholder);
+                // Adiciona o placeholder se o campo estiver vazio
+                if (this.value.trim() === '') {
+                    this.setAttribute('placeholder', item.placeholder);
+                }
             });
 
+            // Quando o campo perde o foco
             inputElement.addEventListener('blur', function() {
-                // Remove o placeholder se o input estiver vazio quando perder o foco
-                if (inputElement.value === '') {
-                    inputElement.removeAttribute('placeholder');
+                // Remove o placeholder, independentemente do valor
+                this.removeAttribute('placeholder');
+                // Remove a classe 'has-content' se o campo estiver vazio
+                if (this.value.trim() === '') {
+                    this.classList.remove('has-content');
+                }
+            });
+
+            // Quando o usuário digita no campo
+            inputElement.addEventListener('input', function() {
+                // Remove o placeholder assim que o usuário digita
+                this.removeAttribute('placeholder');
+                // Adiciona a classe 'has-content' se houver valor
+                if (this.value.trim() !== '') {
+                    this.classList.add('has-content');
+                } else {
+                    this.classList.remove('has-content');
                 }
             });
         }
